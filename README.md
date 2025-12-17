@@ -1,4 +1,11 @@
-# StudyTracker – Greenfield Docker Learning
+# StudyTracker
+
+[![License](https://img.shields.io/github/license/scottnorton-io/studytracker-docker-learning)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/scottnorton-io/studytracker-docker-learning)](https://github.com/Yscottnorton-io/studytracker-docker-learning/commits/main)
+[![Issues](https://img.shields.io/github/issues/scottnorton-io/studytracker-docker-learning)](https://github.com/scottnorton-io/studytracker-docker-learning/issues)
+[![Docker Compose](https://img.shields.io/badge/run-docker%20compose-blue)](#quick-start)
+[![Backends](https://img.shields.io/badge/backends-FastAPI%20%7C%20Flask%20%7C%20Express-informational)](#)
+[![Status](https://img.shields.io/badge/status-Titanium%2010%2B%20ready-success)](#)
 
 > A small, production-shaped web app designed to learn Docker, FastAPI, and PostgreSQL end to end. The goal is not feature depth, but clean architecture, containerization, and Titanium 10+–grade code and documentation.
 
