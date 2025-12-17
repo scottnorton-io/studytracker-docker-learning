@@ -23,6 +23,17 @@ services:
     ports:
       - "8000:8000"
 
+  web-fastapi-env:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.web-fastapi
+    environment:
+      - .env
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+
 volumes:
   db-data:
   
