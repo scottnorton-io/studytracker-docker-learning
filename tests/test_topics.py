@@ -52,4 +52,3 @@ def test_create_session_for_unknown_topic_fails():
         },
     )
     assert resp.status_code in (400, 404)
-  
