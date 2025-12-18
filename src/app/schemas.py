@@ -54,4 +54,3 @@ class SessionRead(SessionBase):
 
 class TopicWithSessions(TopicRead):
     sessions: List[SessionRead] = []
-  
