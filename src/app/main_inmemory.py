@@ -105,4 +105,3 @@ def create_session(payload: SessionBase) -> Session:
     )
     _sessions.append(session)
     return session
-  
