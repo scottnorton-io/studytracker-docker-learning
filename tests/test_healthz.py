@@ -12,4 +12,3 @@ def test_healthz():
     data = response.json()
     assert data["status"] == "ok"
     assert data["service"] == "studytracker-web-fastapi"
-  
