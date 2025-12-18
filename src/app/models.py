@@ -29,4 +29,3 @@ class Session(Base):
     created_at = Column(DateTime, nullable=False, default=datetime.utcnow)
 
     topic = relationship("Topic", back_populates="sessions")
-  
