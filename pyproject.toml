@@ -14,7 +14,8 @@ dev = [
   "httpx",
   "black",
   "isort",
-  "flake8"
+  "flake8",
+  "flake8-pyproject"
 ]
 
 [tool.black]
@@ -23,7 +24,7 @@ target-version = ["py312"]
 
 [tool.flake8]
 max-line-length = 88
-extend-ignore = ["E203", "W503"]
+extend-ignore = ["E203", "W503", "E501"]
 
 [tool.isort]
 profile = "black"
