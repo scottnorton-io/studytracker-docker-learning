@@ -11,4 +11,4 @@ if [ ! -f .env ]; then
 fi
 
 # 3) Build and start app + database
-docker compose up --build web-fastapi db
+docker compose up --build --no-cache web-fastapi db
