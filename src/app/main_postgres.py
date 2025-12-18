@@ -115,4 +115,3 @@ async def create_session(payload: SessionCreate, db: Session = Depends(get_db)):
     db.flush()
     db.refresh(session_obj)
     return session_obj
-  
