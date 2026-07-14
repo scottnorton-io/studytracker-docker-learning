@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: studytracker
       POSTGRES_PASSWORD: studytracker
     ports:
-      - "5432:5432"
+      - "${STUDYTRACKER_DB_PORT:-5436}:5432"
     volumes:
       - db-data:/var/lib/postgresql/data
 
@@ -15,11 +15,11 @@ services:
       context: .
       dockerfile: docker/Dockerfile.web-fastapi
     environment:
-      DATABASE_URL: postgres://studytracker:studytracker@db:5432/studytracker
+      DATABASE_URL: postgresql://studytracker:studytracker@db:5432/studytracker
     depends_on:
       - db
     ports:
-      - "8000:8000"
+      - "${STUDYTRACKER_APP_PORT:-8035}:8000"
 
   web-fastapi-env:
     build:
@@ -29,8 +29,9 @@ services:
       - .env
     depends_on:
       - db
+    profiles: ["env"]
     ports:
-      - "8000:8000"
+      - "${STUDYTRACKER_ENV_APP_PORT:-8036}:8000"
 
 volumes:
   db-data:

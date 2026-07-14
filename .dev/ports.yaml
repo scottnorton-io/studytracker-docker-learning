@@ -1,0 +1,14 @@
+project: studytracker-docker-learning
+ports:
+  - service: web-fastapi
+    port: 8035
+    url: http://localhost:8035
+    notes: Default Studytracker FastAPI service; container port remains 8000.
+  - service: web-fastapi-env
+    port: 8036
+    url: http://localhost:8036
+    notes: Optional env-backed Studytracker FastAPI profile; container port remains 8000.
+  - service: postgres
+    port: 5436
+    url: localhost:5436
+    notes: Studytracker Postgres; container port remains 5432.
